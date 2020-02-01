@@ -1,0 +1,78 @@
+body
+{
+    font-family:Verdana, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f9f1f1;
+}
+h1, h3{
+    text-align:center;
+}
+div{
+    border-bottom: thin solid #000;
+}
+
+@media only screen and (min-width:1em) and (max-width:35em){
+    header{
+        background-color: #999;
+        color:#fff;
+        font-size:1.5em;
+        text-align:center;
+    }
+    header::after{
+        content: "This is the logo";
+    }
+    main div.flower {
+        max-width: 100%;
+        height: 5em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('images/verySmFlower.jpg')
+    }
+}
+
+
+@media only screen and (min-width:35.001em) and (max-width:50.99em){
+    header{
+        background-color: #099909;
+        color:#fff;
+        font-size:1.5em;
+        text-align:center;
+    }
+    header::after{
+        content: "This is the logo";
+    }
+    main div.flower {
+        max-width: 100%;
+        height: 10em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('images/img_214x204flower.jpg');
+    }
+}
+
+
+@media only screen and (min-width:51em) and (max-width:2000em){
+    h1{
+        display: none;
+    }
+    header{
+        max-width: 100%;
+        height: 11.25em;
+        margin: 1em auto;
+        padding: 1%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('images/logo.png');
+        overflow: hidden;
+    }
+    main div.flower {
+        max-width: 100%;
+        height: 30em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('images/img_flowers.jpg');
+    }
+}
